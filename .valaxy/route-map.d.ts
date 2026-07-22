@@ -101,9 +101,16 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/hello-valaxy': RouteRecordInfo<
-      '/posts/hello-valaxy',
-      '/posts/hello-valaxy',
+    '/posts/经济社-new': RouteRecordInfo<
+      '/posts/经济社-new',
+      '/posts/%E7%BB%8F%E6%B5%8E%E7%A4%BE-new',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/TGX-new': RouteRecordInfo<
+      '/posts/TGX-new',
+      '/posts/TGX-new',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -208,9 +215,17 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'pages/posts/hello-valaxy.md': {
+    'pages/posts/经济社-new.md': {
       routes:
-        | '/posts/hello-valaxy'
+        | '/posts/经济社-new'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/TGX-new.md': {
+      routes:
+        | '/posts/TGX-new'
       views:
         | never
       pathParamNames:
