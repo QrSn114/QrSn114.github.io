@@ -2,7 +2,7 @@
 
 
 Example: [valaxy.site](https://valaxy.site)
-
+ 
 ## Usage
 
 ```bash
