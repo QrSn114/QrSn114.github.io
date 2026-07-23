@@ -108,6 +108,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/传媒社': RouteRecordInfo<
+      '/posts/传媒社',
+      '/posts/%E4%BC%A0%E5%AA%92%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/广播站': RouteRecordInfo<
       '/posts/广播站',
       '/posts/%E5%B9%BF%E6%92%AD%E7%AB%99',
@@ -129,6 +136,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/毽球队': RouteRecordInfo<
+      '/posts/毽球队',
+      '/posts/%E6%AF%BD%E7%90%83%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/电视台': RouteRecordInfo<
       '/posts/电视台',
       '/posts/%E7%94%B5%E8%A7%86%E5%8F%B0',
@@ -139,6 +153,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/经济社-new': RouteRecordInfo<
       '/posts/经济社-new',
       '/posts/%E7%BB%8F%E6%B5%8E%E7%A4%BE-new',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/ACE韩舞社': RouteRecordInfo<
+      '/posts/ACE韩舞社',
+      '/posts/ACE%E9%9F%A9%E8%88%9E%E7%A4%BE',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -258,6 +279,14 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/传媒社.md': {
+      routes:
+        | '/posts/传媒社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/广播站.md': {
       routes:
         | '/posts/广播站'
@@ -282,6 +311,14 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/毽球队.md': {
+      routes:
+        | '/posts/毽球队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/电视台.md': {
       routes:
         | '/posts/电视台'
@@ -293,6 +330,14 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/经济社-new.md': {
       routes:
         | '/posts/经济社-new'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/ACE韩舞社.md': {
+      routes:
+        | '/posts/ACE韩舞社'
       views:
         | never
       pathParamNames:
