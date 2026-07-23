@@ -3,40 +3,51 @@ name: GitHub Pages
 on:
   push:
     branches:
+      # The branch where the project source code resides
+      # 项目源代码所在的分支
       - main
 
-permissions:
-  contents: write  # 关键：明确授予写入权限
-
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [lts/*]
+        os: [ubuntu-latest]
+      fail-fast: false
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: 📦 Install Dependencies
+        run: npm i
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: 🌌 Build Valaxy Blog
+        run: npm run build
 
-      - name: Build
-        run: pnpm run build
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: 🔍 Debug - Check dist contents
+        run: |
+          echo "=== dist 目录内容 ==="
+          ls -la dist/
+          echo "=== 如果 dist 为空，显示当前目录 ==="
+          pwd
+          echo "=== 检查是否有 index.html ==="
+          if [ -f "dist/index.html" ]; then
+              echo "✅ dist/index.html 存在"
+          else
+              echo "❌ dist/index.html 不存在"
+          fi
+      
+      - name: 🪤 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          cname: clubs.gczxtgx.top  # 如果你绑定了自定义域名，取消注释并填上
