@@ -33,7 +33,11 @@ jobs:
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build
-
+      
+      # ⭐ 新增：复制 CNAME 文件到 dist 目录
+      - name: Copy CNAME file
+        run: cp public/CNAME dist/CNAME
+      
       - name: 🪤 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
