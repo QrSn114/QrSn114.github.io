@@ -7,7 +7,7 @@ tags:
 top: 15
 ---
 <TGXSplash />
-## 编辑部
+## 编程部
 ![TGX设计社社团招新](https://s41.ax1x.com/2026/07/22/pmc7ASK.jpg)
 ![TGX设计社29届招新群](https://s41.ax1x.com/2026/07/22/pmc7FW6.png)
 加入 TGX 编程部谢谢喵。
