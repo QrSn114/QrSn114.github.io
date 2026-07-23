@@ -24,7 +24,7 @@
         },
         {
             "id": "https://qrsn114.github.io/posts/广播站",
-            "content_html": "<p>广播站招新<br>\n我们不只有言语<br>\n还有 音乐<br>\n与 笔墨</p>\n<p>播音 策划 公众号运营 团建活动<br>\n——这里全都有！</p>\n<p>在广播站这个大家庭里你将获得：</p>\n<ul>\n<li>独立栏目制作经验</li>\n<li>专业录音设备实操</li>\n<li>超多团建活动</li>\n</ul>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/广播站\" target=\"_blank\">https://qrsn114.github.io/posts/广播站</a> 阅读全文。</p>",
+            "content_html": "<SplashScreen text=\"桂城中学官社认证！\" :duration=\"3000\" />\n<p>广播站招新<br>\n我们不只有言语<br>\n还有 音乐<br>\n与 笔墨</p>\n<p>播音 策划 公众号运营 团建活动<br>\n——这里全</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/广播站\" target=\"_blank\">https://qrsn114.github.io/posts/广播站</a> 阅读全文。</p>",
             "url": "https://qrsn114.github.io/posts/广播站",
             "title": "广播站",
             "date_modified": "2026-07-23T00:00:00.000Z",
@@ -51,6 +51,18 @@
             "content_html": "<p>“明事理，知荣辱，然后内敛自律”<br>\n桂中跑团社的宗旨是“一个人可以跑的很快，但一群人可以跑的很远。”<br>\n我们没有要求，没有限制你要跑多少步，只希望你慢慢找到跑步的乐趣，真正喜欢上跑步。与其他成员一起进步，</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/桂中跑团\" target=\"_blank\">https://qrsn114.github.io/posts/桂中跑团</a> 阅读全文。</p>",
             "url": "https://qrsn114.github.io/posts/桂中跑团",
             "title": "桂中跑团",
+            "date_modified": "2026-07-23T00:00:00.000Z",
+            "date_published": "2026-07-23T00:00:00.000Z",
+            "author": {
+                "name": "QrSn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://qrsn114.github.io/posts/毽球队",
+            "content_html": "<p>桂城中学毽球队招新 别躺平，来踢毽‼<br>\n在这里，没有陌生隔阂，只有并肩的队友、畅快的奔跑、轻松的欢笑。日常训练、趣味团建、区级赛事，每一段时光都热烈又难忘。跳出舒适圈，解锁新技能，加入毽球队，让你的青</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/毽球队\" target=\"_blank\">https://qrsn114.github.io/posts/毽球队</a> 阅读全文。</p>",
+            "url": "https://qrsn114.github.io/posts/毽球队",
+            "title": "毽球队",
             "date_modified": "2026-07-23T00:00:00.000Z",
             "date_published": "2026-07-23T00:00:00.000Z",
             "author": {
