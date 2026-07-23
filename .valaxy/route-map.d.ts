@@ -101,6 +101,41 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/主持人队': RouteRecordInfo<
+      '/posts/主持人队',
+      '/posts/%E4%B8%BB%E6%8C%81%E4%BA%BA%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/广播站': RouteRecordInfo<
+      '/posts/广播站',
+      '/posts/%E5%B9%BF%E6%92%AD%E7%AB%99',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/摄协-new': RouteRecordInfo<
+      '/posts/摄协-new',
+      '/posts/%E6%91%84%E5%8D%8F-new',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/桂中跑团': RouteRecordInfo<
+      '/posts/桂中跑团',
+      '/posts/%E6%A1%82%E4%B8%AD%E8%B7%91%E5%9B%A2',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/电视台': RouteRecordInfo<
+      '/posts/电视台',
+      '/posts/%E7%94%B5%E8%A7%86%E5%8F%B0',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/经济社-new': RouteRecordInfo<
       '/posts/经济社-new',
       '/posts/%E7%BB%8F%E6%B5%8E%E7%A4%BE-new',
@@ -210,6 +245,46 @@ declare module 'vue-router/auto-routes' {
     'node_modules/.pnpm/valaxy-theme-yun@0.28.11_ma_f169e6ae657e3474eef0a0161700ebae/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/主持人队.md': {
+      routes:
+        | '/posts/主持人队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/广播站.md': {
+      routes:
+        | '/posts/广播站'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/摄协-new.md': {
+      routes:
+        | '/posts/摄协-new'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/桂中跑团.md': {
+      routes:
+        | '/posts/桂中跑团'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/电视台.md': {
+      routes:
+        | '/posts/电视台'
       views:
         | never
       pathParamNames:
