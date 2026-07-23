@@ -30,7 +30,7 @@ jobs:
         run: npm i
 
       - name: 🌌 Build Valaxy Blog
-        run: npm run build
+        run: npm run build:spa
 
       # 👇 调试步骤：检查 dist 目录内容
       - name: 🔍 Debug - Check dist contents
