@@ -14,14 +14,17 @@
 
     <!-- 内容 -->
     <div class="content-wrapper">
-      <h1 class="main-title">
-        <span 
-          v-for="(char, index) in titleChars" 
-          :key="index"
-          class="char"
-          :style="{ animationDelay: (0.1 + index * 0.18) + 's' }"
-        >{{ char }}</span>
-      </h1>
+      <!-- 标题容器：宽度固定为屏幕宽度的 70% -->
+      <div class="title-wrapper">
+        <h1 class="main-title">
+          <span 
+            v-for="(char, index) in titleChars" 
+            :key="index"
+            class="char"
+            :style="{ animationDelay: (0.1 + index * 0.18) + 's' }"
+          >{{ char }}</span>
+        </h1>
+      </div>
       <div class="sub-title">✦ 边界探索 · 无限可能 ✦</div>
     </div>
 
@@ -65,7 +68,7 @@ onMounted(() => {
   overflow: hidden;
   pointer-events: none;
   transition: opacity 0.8s ease;
-  padding: 0 2vw;
+  padding: 0;
 }
 
 .splash-screen.fade-out {
@@ -84,7 +87,6 @@ onMounted(() => {
   overflow: hidden;
 }
 
-/* ===== 所有倾斜矩形的共同样式 ===== */
 .slanted-rect {
   position: absolute;
   width: 200%;
@@ -94,7 +96,6 @@ onMounted(() => {
   animation: slideDiagonal linear infinite;
 }
 
-/* ===== 各矩形：更亮、更快 ===== */
 .rect-1 {
   top: 5%;
   animation-duration: 5s;
@@ -102,7 +103,6 @@ onMounted(() => {
   opacity: 0.7;
   height: 2px;
 }
-
 .rect-2 {
   top: 18%;
   animation-duration: 7s;
@@ -110,7 +110,6 @@ onMounted(() => {
   opacity: 0.5;
   height: 3px;
 }
-
 .rect-3 {
   top: 32%;
   animation-duration: 4.5s;
@@ -118,7 +117,6 @@ onMounted(() => {
   opacity: 0.8;
   height: 2px;
 }
-
 .rect-4 {
   top: 48%;
   animation-duration: 6s;
@@ -126,7 +124,6 @@ onMounted(() => {
   opacity: 0.6;
   height: 2.5px;
 }
-
 .rect-5 {
   top: 62%;
   animation-duration: 5.5s;
@@ -134,7 +131,6 @@ onMounted(() => {
   opacity: 0.7;
   height: 2px;
 }
-
 .rect-6 {
   top: 78%;
   animation-duration: 8s;
@@ -143,7 +139,6 @@ onMounted(() => {
   height: 3px;
 }
 
-/* ===== 关键帧：沿45°方向快速平移 ===== */
 @keyframes slideDiagonal {
   0% {
     transform: rotate(45deg) translateX(-150%) translateY(-150%);
@@ -170,7 +165,7 @@ onMounted(() => {
   100% { opacity: 0.6; transform: scale(1.2); }
 }
 
-/* ===== 内容包装器（最上层） ===== */
+/* ===== 内容包装器 ===== */
 .content-wrapper {
   position: relative;
   z-index: 2;
@@ -179,24 +174,40 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 }
 
-/* ===== 主标题 ===== */
+/* ===== 标题包装器：宽度固定为屏幕宽度的 70% ===== */
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-shrink: 0;
+}
+
+/* ===== 主标题：字母自适应填充容器 ===== */
 .main-title {
   display: flex;
-  gap: 0.04em;
-  font-size: 14vw;
-  font-weight: 300;
-  letter-spacing: 0.08em;
+  justify-content: center;
+  align-items: center;
+  gap: 0.05em;
+  font-size: 22vw;        /* 调整这个值让字母刚好填满 70% 容器 */
+  font-weight: 400;
+  letter-spacing: 0.02em;
   color: #ffffff;
-  text-shadow: 0 0 60px rgba(30, 120, 255, 0.06);
+  text-shadow: 0 0 80px rgba(30, 120, 255, 0.1);
   margin: 0;
   padding: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 1;
 }
 
-/* ===== 字母浮现动画 ===== */
+/* ===== 每个字母 ===== */
 .char {
   display: inline-block;
+  flex-shrink: 0;
   opacity: 0;
   transform: translateY(40px) scale(0.92);
   filter: blur(10px);
@@ -236,9 +247,10 @@ onMounted(() => {
   color: rgba(136, 153, 187, 0.7);
   opacity: 0;
   animation: fadeIn 1.2s ease 2s forwards;
-  margin-top: 4rem !important;
-  padding: 0 !important;
+  margin-top: 3rem !important;
+  padding: 0 2vw !important;
   text-align: center;
+  flex-shrink: 0;
 }
 
 @keyframes fadeIn {
@@ -249,7 +261,7 @@ onMounted(() => {
 /* ===== 底部文字 ===== */
 .footer-text {
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   z-index: 2;
   font-size: 0.8vw;
   color: rgba(255, 255, 255, 0.05);
@@ -261,16 +273,16 @@ onMounted(() => {
 
 /* ===== 移动端适配 ===== */
 @media (max-width: 768px) {
-  .splash-screen {
-    padding: 0 4vw;
+  .title-wrapper {
+    width: 85%;           /* 移动端占 85%，让字母更大一些 */
   }
   .main-title {
-    font-size: 22vw;
+    font-size: 28vw;      /* 移动端相应调整 */
   }
   .sub-title {
     font-size: 2.8vw;
     letter-spacing: 0.3em;
-    margin-top: 3rem !important;
+    margin-top: 2rem !important;
   }
   .footer-text {
     font-size: 1.8vw;
