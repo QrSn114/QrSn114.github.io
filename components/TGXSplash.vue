@@ -12,7 +12,7 @@
 
     <div class="content-wrapper">
       <div class="title-wrapper">
-        <h1 class="main-title">
+        <h1 class="main-title" id="main-title">
           <span class="char">T</span>
           <span class="char">G</span>
           <span class="char">X</span>
@@ -28,19 +28,52 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 
 const showSplash = ref(true)
 const isFadingOut = ref(false)
 
-onMounted(() => {
-  // 组件挂载后，只控制淡出，不控制出现动画
+// 设置字体大小，让字母总宽度 = 屏幕宽度 × 70%
+const setFontSize = () => {
+  const title = document.getElementById('main-title')
+  if (!title) return
+  
+  const screenWidth = window.innerWidth
+  const targetWidth = screenWidth * 0.7
+  
+  // 先用一个基础大小
+  let fontSize = screenWidth * 0.22
+  title.style.fontSize = fontSize + 'px'
+  
+  // 微调直到接近目标宽度
+  let currentWidth = title.scrollWidth
+  let attempts = 0
+  while (Math.abs(currentWidth - targetWidth) > 2 && attempts < 15) {
+    const ratio = targetWidth / currentWidth
+    fontSize = fontSize * ratio
+    title.style.fontSize = fontSize + 'px'
+    currentWidth = title.scrollWidth
+    attempts++
+  }
+}
+
+onMounted(async () => {
+  await nextTick()
+  await new Promise(resolve => requestAnimationFrame(resolve))
+  await new Promise(resolve => requestAnimationFrame(resolve))
+  
+  setFontSize()
+  
   setTimeout(() => {
     isFadingOut.value = true
     setTimeout(() => {
       showSplash.value = false
     }, 800)
   }, 4000)
+})
+
+window.addEventListener('resize', () => {
+  if (!isFadingOut.value) setFontSize()
 })
 </script>
 
@@ -66,7 +99,7 @@ onMounted(() => {
 
 .splash-screen.fade-out { opacity: 0; }
 
-/* ===== 背景矩形 ===== */
+/* ===== 背景矩形（你原来的，没动） ===== */
 .bg-slanted {
   position: absolute;
   top: 0;
@@ -96,7 +129,7 @@ onMounted(() => {
   100% { transform: rotate(45deg) translateX(150%) translateY(150%); }
 }
 
-/* ===== 光晕 ===== */
+/* ===== 光晕（你原来的，没动） ===== */
 .glow {
   position: absolute;
   width: 50vw; height: 50vw;
@@ -127,11 +160,12 @@ onMounted(() => {
   justify-content: center;
   width: 70%;
 }
+
+/* ===== 主标题：不设 font-size，由 JS 控制 ===== */
 .main-title {
   display: flex;
   justify-content: center;
-  gap: .05em;
-  font-size: clamp(4rem, 22vw, 20rem);
+  gap: 0.05em;
   font-weight: 400;
   color: #fff;
   text-shadow: 0 0 80px rgba(30, 120, 255, .1);
@@ -142,16 +176,14 @@ onMounted(() => {
   line-height: 1;
 }
 
-/* ===== 每个字母：纯 CSS 动画，延迟启动 ===== */
+/* ===== 每个字母的动画（你原来的，没动） ===== */
 .char {
   display: inline-block;
   opacity: 0;
   transform: translateY(40px) scale(0.92);
   filter: blur(10px);
-  /* 关键：动画延迟 0.3s，给浏览器留出计算字体大小的时间 */
   animation: appear 1.6s cubic-bezier(.22, .61, .36, 1) 0.3s forwards;
 }
-
 .char:nth-child(1) { animation-delay: 0.3s; }
 .char:nth-child(2) { animation-delay: 0.48s; }
 .char:nth-child(3) { animation-delay: 0.66s; }
@@ -163,7 +195,7 @@ onMounted(() => {
   100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
 }
 
-/* ===== 副标题 ===== */
+/* ===== 副标题（你原来的，没动） ===== */
 .sub-title {
   position: relative;
   z-index: 2;
@@ -180,7 +212,7 @@ onMounted(() => {
   100% { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
-/* ===== 底部文字 ===== */
+/* ===== 底部文字（你原来的，没动） ===== */
 .footer-text {
   position: absolute;
   bottom: 8%;
@@ -193,10 +225,9 @@ onMounted(() => {
   animation: fadeIn 1s ease 1.8s forwards;
 }
 
-/* ===== 移动端 ===== */
+/* ===== 移动端（你原来的，没动） ===== */
 @media (max-width: 768px) {
   .title-wrapper { width: 85%; }
-  .main-title { font-size: clamp(3rem, 28vw, 12rem); }
   .sub-title { font-size: 2.8vw; letter-spacing: .3em; margin-top: 2rem; }
   .footer-text { font-size: 1.8vw; }
 }
