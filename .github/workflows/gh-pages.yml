@@ -3,40 +3,36 @@ name: GitHub Pages
 on:
   push:
     branches:
-      # The branch where the project source code resides
-      # 项目源代码所在的分支
-      - main
-      - master
-      - valaxy
+      - main  # 触发分支，确保和你的默认分支一致
 
 jobs:
-  build:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        node-version: [lts/*]
-        os: [ubuntu-latest]
-      fail-fast: false
-
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout  # 拉取你的源代码
+        uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Setup Node.js  # 设置 Node.js 环境
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: https://registry.npmjs.org/
+          node-version: '22'  # 使用最新的 LTS 版本
 
-      - name: 📦 Install Dependencies
-        run: npm i
+      - name: Install pnpm  # 安装 pnpm（你用的是 pnpm，对吧？）
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
-      - name: 🌌 Build Valaxy Blog
-        run: npm run build
+      - name: Install dependencies  # 安装项目依赖
+        run: pnpm install --frozen-lockfile
 
-      - name: 🪤 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Build Valaxy Blog  # 构建站点，生成 dist 文件夹
+        run: pnpm run build
+
+      - name: Deploy to GitHub Pages  # 关键步骤：部署 dist 到 gh-pages 分支
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true
+          force_orphan: true  # 强制清空旧内容，用新内容完全替换
+          cname: clubs.gczxtgx.top  # 如果你绑定了自定义域名，取消注释并填上
