@@ -20,12 +20,10 @@ jobs:
       fail-fast: false
 
     steps:
-      # ⭐ 改动1：从 v2 升级到 v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
-      # ⭐ 改动2：从 v2 升级到 v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
@@ -35,17 +33,10 @@ jobs:
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build
-      
-      # 复制 CNAME 文件到 dist 目录（这行你的代码里已经有了，保持不变）
-      - name: Copy CNAME file
-        run: cp public/CNAME dist/CNAME
-      
-      # ⭐ 改动3：从 v3 升级到 v4，并新增 cname 参数
+
       - name: 🪤 Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
-          # ⭐ 新增：直接在这里指定你的域名，作为双重保障
-          cname: clubs.gczxtgx.top  # ← 把 yourdomain.com 换成你的实际域名
