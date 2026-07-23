@@ -32,22 +32,49 @@ jobs:
       - name: 🌌 Build Valaxy Blog
         run: npm run build
 
+      # 👇 调试步骤：检查 dist 目录内容
       - name: 🔍 Debug - Check dist contents
         run: |
-          echo "=== dist 目录内容 ==="
-          ls -la dist/
-          echo "=== 如果 dist 为空，显示当前目录 ==="
+          echo "=== 当前工作目录 ==="
           pwd
-          echo "=== 检查是否有 index.html ==="
-          if [ -f "dist/index.html" ]; then
+          echo ""
+          echo "=== dist 目录是否存在 ==="
+          if [ -d "dist" ]; then
+            echo "✅ dist 目录存在"
+            echo ""
+            echo "=== dist 目录完整内容（包含隐藏文件） ==="
+            ls -la dist/
+            echo ""
+            echo "=== 检查关键文件 ==="
+            if [ -f "dist/index.html" ]; then
               echo "✅ dist/index.html 存在"
-          else
+              echo "文件大小: $(wc -c < dist/index.html) 字节"
+            else
               echo "❌ dist/index.html 不存在"
+            fi
+            echo ""
+            echo "=== 检查是否有 .html 隐藏文件（Valaxy 已知问题） ==="
+            if [ -f "dist/.html" ]; then
+              echo "⚠️ 发现 dist/.html 隐藏文件（这可能导致部署问题）"
+            else
+              echo "✅ 没有 .html 隐藏文件"
+            fi
+            echo ""
+            echo "=== 统计文件总数 ==="
+            find dist -type f | wc -l
+          else
+            echo "❌ dist 目录不存在！"
+            echo "=== 当前目录内容 ==="
+            ls -la
           fi
-      
+
       - name: 🪤 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          force_orphan: true
+          # force_orphan: true  # 暂时注释掉，避免孤儿分支可能导致的问题
+          keep_files: false     # 每次部署前清空 gh-pages 分支，确保干净
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'deploy: ${{ github.event.head_commit.message }}'
