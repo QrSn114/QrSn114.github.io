@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://qrsn114.github.io/posts/乒乓球队",
+            "content_html": "<p>桂中乒乓球队｜招新启动</p>\n<p>想找志同道合的球友？热爱乒乓的你，别错过！</p>\n<p>加入我们，你能收获什么？</p>\n<ul>\n<li>充足球台训练场地，课后固定开放，随时约球对打</li>\n<li>专业队员一对一指导基础动作、实战战术，稳步精进</li>\n</ul>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/乒乓球队\" target=\"_blank\">https://qrsn114.github.io/posts/乒乓球队</a> 阅读全文。</p>",
+            "url": "https://qrsn114.github.io/posts/乒乓球队",
+            "title": "乒乓球队",
+            "date_modified": "2026-07-25T00:00:00.000Z",
+            "date_published": "2026-07-25T00:00:00.000Z",
+            "author": {
+                "name": "QrSn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
             "id": "https://qrsn114.github.io/posts/团委",
             "content_html": "<SplashScreen text=\"桂城中学官社认证！\" :duration=\"3000\" />\n<p><strong>不是团员也可加入该社</strong></p>\n<p>桂中团委火热招新</p>\n<p>“聚是一团火，散是满天星”<br>\n桂中团委开始招新</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/团委\" target=\"_blank\">https://qrsn114.github.io/posts/团委</a> 阅读全文。</p>",
             "url": "https://qrsn114.github.io/posts/团委",
@@ -27,6 +39,42 @@
             "content_html": "<p>小弟弟小妹妹们你们该提升审美了🥴</p>\n<hr>\n<p>“在路上”文学社<br>\n震撼招新🔥🔥🔥</p>\n<hr>\n<p>文学社招新 | 以文会友，绘出未来</p>\n<p>同学，你是否感觉自己太小众无人懂你的忧郁<br>\n来文学社，让你从此不再</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/在路上文学社\" target=\"_blank\">https://qrsn114.github.io/posts/在路上文学社</a> 阅读全文。</p>",
             "url": "https://qrsn114.github.io/posts/在路上文学社",
             "title": "在路上文学社",
+            "date_modified": "2026-07-25T00:00:00.000Z",
+            "date_published": "2026-07-25T00:00:00.000Z",
+            "author": {
+                "name": "QrSn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://qrsn114.github.io/posts/校舞蹈队",
+            "content_html": "<p><img src=\"https://qrsn114.github.io/pictures/%E6%A0%A1%E8%88%9E%E8%B9%88%E9%98%9F%E6%8B%9B%E6%96%B0%E6%B5%B7%E6%8A%A5.jpg\" alt=\"校舞蹈队招新海报\"><br>\n<img src=\"https://qrsn114.github.io/pictures/%E6%A0%A1%E8%88%9E%E8%B9%88%E9%98%9F%E6%8B%9B%E6%96%B0%E7%BE%A4.jpg\" alt=\"校舞蹈队招新群\"></p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/校舞蹈队\" target=\"_blank\">https://qrsn114.github.io/posts/校舞蹈队</a> 阅读全文。</p>",
+            "url": "https://qrsn114.github.io/posts/校舞蹈队",
+            "title": "校舞蹈队",
+            "date_modified": "2026-07-25T00:00:00.000Z",
+            "date_published": "2026-07-25T00:00:00.000Z",
+            "author": {
+                "name": "QrSn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://qrsn114.github.io/posts/模拟联合国",
+            "content_html": "<p>模拟联合国火热招新！<br>\n想拥有国际化的眼界和气场吗？<br>\n想站在舞台上从容发言辩论吗？<br>\n想与站在更高视角舌战群儒勇敢探讨吗？<br>\n那么请加入模拟联合国<br>\n在这里，你将查阅资料、撰写立场文件参与磋商辩论、体验外交博</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/模拟联合国\" target=\"_blank\">https://qrsn114.github.io/posts/模拟联合国</a> 阅读全文。</p>",
+            "url": "https://qrsn114.github.io/posts/模拟联合国",
+            "title": "模拟联合国",
+            "date_modified": "2026-07-25T00:00:00.000Z",
+            "date_published": "2026-07-25T00:00:00.000Z",
+            "author": {
+                "name": "QrSn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://qrsn114.github.io/posts/电影社",
+            "content_html": "<p><img src=\"https://qrsn114.github.io/pictures/IMG_20260725_222556_0107.jpg\" alt=\"\"><br>\n<img src=\"https://qrsn114.github.io/pictures/IMG_20260725_222557_0108.jpg\" alt=\"\"><br>\n![](/pictur</p>\n<br/><p>访问 <a href=\"https://qrsn114.github.io/posts/电影社\" target=\"_blank\">https://qrsn114.github.io/posts/电影社</a> 阅读全文。</p>",
+            "url": "https://qrsn114.github.io/posts/电影社",
+            "title": "电影社",
             "date_modified": "2026-07-25T00:00:00.000Z",
             "date_published": "2026-07-25T00:00:00.000Z",
             "author": {
