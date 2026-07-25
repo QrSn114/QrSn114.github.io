@@ -99,7 +99,7 @@ window.addEventListener('resize', () => {
 
 .splash-screen.fade-out { opacity: 0; }
 
-/* ===== 背景矩形（你原来的，没动） ===== */
+/* ===== 背景矩形 ===== */
 .bg-slanted {
   position: absolute;
   top: 0;
@@ -129,7 +129,7 @@ window.addEventListener('resize', () => {
   100% { transform: rotate(45deg) translateX(150%) translateY(150%); }
 }
 
-/* ===== 光晕（你原来的，没动） ===== */
+/* ===== 光晕 ===== */
 .glow {
   position: absolute;
   width: 50vw; height: 50vw;
@@ -161,7 +161,7 @@ window.addEventListener('resize', () => {
   width: 70%;
 }
 
-/* ===== 主标题：不设 font-size，由 JS 控制 ===== */
+/* ===== 主标题 ===== */
 .main-title {
   display: flex;
   justify-content: center;
@@ -176,7 +176,7 @@ window.addEventListener('resize', () => {
   line-height: 1;
 }
 
-/* ===== 每个字母的动画（你原来的，没动） ===== */
+/* ===== 每个字母的动画 ===== */
 .char {
   display: inline-block;
   opacity: 0;
@@ -195,7 +195,7 @@ window.addEventListener('resize', () => {
   100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
 }
 
-/* ===== 副标题（你原来的，没动） ===== */
+/* ===== 副标题 ===== */
 .sub-title {
   position: relative;
   z-index: 2;
@@ -212,20 +212,20 @@ window.addEventListener('resize', () => {
   100% { opacity: 1; transform: translateY(0); filter: blur(0); }
 }
 
-/* ===== 底部文字（你原来的，没动） ===== */
+/* ===== 底部文字（已调亮） ===== */
 .footer-text {
   position: absolute;
   bottom: 8%;
   z-index: 2;
   font-size: .8vw;
-  color: rgba(255, 255, 255, .05);
+  color: #aaaaaa;          /* 亮灰色，与黑色背景明显区分 */
   letter-spacing: .5em;
   text-transform: uppercase;
   opacity: 0;
   animation: fadeIn 1s ease 1.8s forwards;
 }
 
-/* ===== 移动端（你原来的，没动） ===== */
+/* ===== 移动端 ===== */
 @media (max-width: 768px) {
   .title-wrapper { width: 85%; }
   .sub-title { font-size: 2.8vw; letter-spacing: .3em; margin-top: 2rem; }
