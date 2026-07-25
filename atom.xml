@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qrsn114.github.io/</id>
     <title>桂城中学民间新生指南</title>
-    <updated>2026-07-25T13:28:10.519Z</updated>
+    <updated>2026-07-25T13:55:13.784Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>QrSn</name>
@@ -15,6 +15,24 @@
     <logo>https://s41.ax1x.com/2026/07/22/pmcIQYV.jpg</logo>
     <icon>https://qrsn114.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2026 © QrSn</rights>
+    <entry>
+        <title type="html"><![CDATA[桂中团委]]></title>
+        <id>https://qrsn114.github.io/posts/团委</id>
+        <link href="https://qrsn114.github.io/posts/团委"/>
+        <updated>2026-07-25T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<SplashScreen text="桂城中学官社认证！" :duration="3000" />
+<p><strong>不是团员也可加入该社</strong></p>
+<p>桂中团委火热招新</p>
+<p>“聚是一团火，散是满天星”<br>
+桂中团委开始招新</p>
+<br/><p>访问 <a href="https://qrsn114.github.io/posts/团委" target="_blank">https://qrsn114.github.io/posts/团委</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>QrSn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2026-07-25T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在路上文学社]]></title>
         <id>https://qrsn114.github.io/posts/在路上文学社</id>

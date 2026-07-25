@@ -4,7 +4,7 @@
         <title>桂城中学民间新生指南</title>
         <link>https://qrsn114.github.io/</link>
         <description>面向新生的入学指南，仅代表个人观点，不代表任何官方立场</description>
-        <lastBuildDate>Sat, 25 Jul 2026 13:28:10 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Jul 2026 13:55:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,19 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2026 © QrSn</copyright>
         <atom:link href="https://qrsn114.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[桂中团委]]></title>
+            <link>https://qrsn114.github.io/posts/团委</link>
+            <guid isPermaLink="false">https://qrsn114.github.io/posts/团委</guid>
+            <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<SplashScreen text="桂城中学官社认证！" :duration="3000" />
+<p><strong>不是团员也可加入该社</strong></p>
+<p>桂中团委火热招新</p>
+<p>“聚是一团火，散是满天星”<br>
+桂中团委开始招新</p>
+<br/><p>访问 <a href="https://qrsn114.github.io/posts/团委" target="_blank">https://qrsn114.github.io/posts/团委</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (QrSn)</author>
+        </item>
         <item>
             <title><![CDATA[在路上文学社]]></title>
             <link>https://qrsn114.github.io/posts/在路上文学社</link>
