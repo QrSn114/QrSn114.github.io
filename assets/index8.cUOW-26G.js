@@ -1,0 +1,1 @@
+import{$ as e,W as t}from"./theme.Cif5d5jL.js";import{addressResolver as n}from"./index28.Hc1gONjA.js";var r=t({defaults:{"@type":`Place`},resolve(t,r){return typeof t.address!=`string`&&(t.address=e(t.address,r,n)),t}});export{r as placeResolver};
