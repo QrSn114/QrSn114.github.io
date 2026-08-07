@@ -1,0 +1,1 @@
+import{W as e}from"./theme.BCi_0uPL.js";var t=e({defaults:{"@type":`AggregateRating`}});export{t as aggregateRatingResolver};
