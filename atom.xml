@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://qrsn114.github.io/</id>
     <title>桂城中学民间新生指南</title>
-    <updated>2026-08-07T12:55:26.419Z</updated>
+    <updated>2026-08-07T13:30:40.984Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>QrSn</name>
@@ -325,6 +325,23 @@ Band队是由主唱、鼓手、电吉他手、贝斯手【bass】、键盘手组
 <li>学校</li>
 </ul>
 <br/><p>访问 <a href="https://qrsn114.github.io/posts/传媒社" target="_blank">https://qrsn114.github.io/posts/传媒社</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>QrSn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2026-07-23T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电视台]]></title>
+        <id>https://qrsn114.github.io/posts/学生会</id>
+        <link href="https://qrsn114.github.io/posts/学生会"/>
+        <updated>2026-07-23T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<SplashScreen text="桂城中学官社认证！" :duration="3000" />
+<p>❤️‍🔥❤️‍🔥桂中学生会招新❤️‍🔥❤️‍🔥</p>
+<p>🔥桂中学生会招新正式开启🔥<br>
+📍</p>
+<br/><p>访问 <a href="https://qrsn114.github.io/posts/学生会" target="_blank">https://qrsn114.github.io/posts/学生会</a> 阅读全文。</p>]]></content>
         <author>
             <name>QrSn</name>
             <email>i@valaxy.site</email>
