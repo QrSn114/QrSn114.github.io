@@ -1,5 +1,5 @@
 ---
-title: 青创社
+title: Band乐队
 date: 2026-08-07
 categories: 社团
 tags:
