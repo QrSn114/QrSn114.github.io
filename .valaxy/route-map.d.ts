@@ -108,9 +108,58 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/乒乓球队': RouteRecordInfo<
+      '/posts/乒乓球队',
+      '/posts/%E4%B9%92%E4%B9%93%E7%90%83%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/传媒社': RouteRecordInfo<
       '/posts/传媒社',
       '/posts/%E4%BC%A0%E5%AA%92%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/创客部': RouteRecordInfo<
+      '/posts/创客部',
+      '/posts/%E5%88%9B%E5%AE%A2%E9%83%A8',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/听颂中文辩论队': RouteRecordInfo<
+      '/posts/听颂中文辩论队',
+      '/posts/%E5%90%AC%E9%A2%82%E4%B8%AD%E6%96%87%E8%BE%A9%E8%AE%BA%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/咏春社': RouteRecordInfo<
+      '/posts/咏春社',
+      '/posts/%E5%92%8F%E6%98%A5%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/团委': RouteRecordInfo<
+      '/posts/团委',
+      '/posts/%E5%9B%A2%E5%A7%94',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/在路上文学社': RouteRecordInfo<
+      '/posts/在路上文学社',
+      '/posts/%E5%9C%A8%E8%B7%AF%E4%B8%8A%E6%96%87%E5%AD%A6%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/学生会': RouteRecordInfo<
+      '/posts/学生会',
+      '/posts/%E5%AD%A6%E7%94%9F%E4%BC%9A',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -122,9 +171,23 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/心理社': RouteRecordInfo<
+      '/posts/心理社',
+      '/posts/%E5%BF%83%E7%90%86%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/摄协-new': RouteRecordInfo<
       '/posts/摄协-new',
       '/posts/%E6%91%84%E5%8D%8F-new',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/校舞蹈队': RouteRecordInfo<
+      '/posts/校舞蹈队',
+      '/posts/%E6%A0%A1%E8%88%9E%E8%B9%88%E9%98%9F',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -136,9 +199,37 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/模拟联合国': RouteRecordInfo<
+      '/posts/模拟联合国',
+      '/posts/%E6%A8%A1%E6%8B%9F%E8%81%94%E5%90%88%E5%9B%BD',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/毽球队': RouteRecordInfo<
       '/posts/毽球队',
       '/posts/%E6%AF%BD%E7%90%83%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/漫研社': RouteRecordInfo<
+      '/posts/漫研社',
+      '/posts/%E6%BC%AB%E7%A0%94%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/物理竞赛社': RouteRecordInfo<
+      '/posts/物理竞赛社',
+      '/posts/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/电影社': RouteRecordInfo<
+      '/posts/电影社',
+      '/posts/%E7%94%B5%E5%BD%B1%E7%A4%BE',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -157,9 +248,51 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/羽毛球社': RouteRecordInfo<
+      '/posts/羽毛球社',
+      '/posts/%E7%BE%BD%E6%AF%9B%E7%90%83%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/英语辩论队': RouteRecordInfo<
+      '/posts/英语辩论队',
+      '/posts/%E8%8B%B1%E8%AF%AD%E8%BE%A9%E8%AE%BA%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/街舞社': RouteRecordInfo<
+      '/posts/街舞社',
+      '/posts/%E8%A1%97%E8%88%9E%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/青创社': RouteRecordInfo<
+      '/posts/青创社',
+      '/posts/%E9%9D%92%E5%88%9B%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/食堂宵夜': RouteRecordInfo<
+      '/posts/食堂宵夜',
+      '/posts/%E9%A3%9F%E5%A0%82%E5%AE%B5%E5%A4%9C',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/ACE韩舞社': RouteRecordInfo<
       '/posts/ACE韩舞社',
       '/posts/ACE%E9%9F%A9%E8%88%9E%E7%A4%BE',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/Band乐队': RouteRecordInfo<
+      '/posts/Band乐队',
+      '/posts/Band%E4%B9%90%E9%98%9F',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -279,9 +412,65 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/乒乓球队.md': {
+      routes:
+        | '/posts/乒乓球队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/传媒社.md': {
       routes:
         | '/posts/传媒社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/创客部.md': {
+      routes:
+        | '/posts/创客部'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/听颂中文辩论队.md': {
+      routes:
+        | '/posts/听颂中文辩论队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/咏春社.md': {
+      routes:
+        | '/posts/咏春社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/团委.md': {
+      routes:
+        | '/posts/团委'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/在路上文学社.md': {
+      routes:
+        | '/posts/在路上文学社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/学生会.md': {
+      routes:
+        | '/posts/学生会'
       views:
         | never
       pathParamNames:
@@ -295,9 +484,25 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/心理社.md': {
+      routes:
+        | '/posts/心理社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/摄协-new.md': {
       routes:
         | '/posts/摄协-new'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/校舞蹈队.md': {
+      routes:
+        | '/posts/校舞蹈队'
       views:
         | never
       pathParamNames:
@@ -311,9 +516,41 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/模拟联合国.md': {
+      routes:
+        | '/posts/模拟联合国'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/毽球队.md': {
       routes:
         | '/posts/毽球队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/漫研社.md': {
+      routes:
+        | '/posts/漫研社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/物理竞赛社.md': {
+      routes:
+        | '/posts/物理竞赛社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/电影社.md': {
+      routes:
+        | '/posts/电影社'
       views:
         | never
       pathParamNames:
@@ -335,9 +572,57 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
+    'pages/posts/羽毛球社.md': {
+      routes:
+        | '/posts/羽毛球社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/英语辩论队.md': {
+      routes:
+        | '/posts/英语辩论队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/街舞社.md': {
+      routes:
+        | '/posts/街舞社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/青创社.md': {
+      routes:
+        | '/posts/青创社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/食堂宵夜.md': {
+      routes:
+        | '/posts/食堂宵夜'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
     'pages/posts/ACE韩舞社.md': {
       routes:
         | '/posts/ACE韩舞社'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/Band乐队.md': {
+      routes:
+        | '/posts/Band乐队'
       views:
         | never
       pathParamNames:
