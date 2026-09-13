@@ -17,6 +17,7 @@
 </template>
 
 <style scoped>
+/* ===== 警告框容器 ===== */
 .alert-box {
   display: flex;
   align-items: flex-start;
@@ -48,16 +49,16 @@
   stroke: #e74c3c;
 }
 
-/* ===== 右侧文字内容 ===== */
+/* ===== 右侧文字内容：浅色主题下用深色文字 ===== */
 .alert-content {
   flex: 1;
   min-width: 0;
-  color: #333333;
+  color: #1a1a1a;
   font-size: 1rem;
   line-height: 1.7;
 }
 
-/* ===== 暗色主题适配 ===== */
+/* ===== 暗色主题适配（系统偏好） ===== */
 @media (prefers-color-scheme: dark) {
   .alert-box {
     background-color: rgba(231, 76, 60, 0.12);
@@ -67,7 +68,7 @@
     background-color: rgba(231, 76, 60, 0.2);
   }
   .alert-content {
-    color: #e0e0e0;
+    color: #f0f0f0;
   }
   .alert-icon {
     color: #e74c3c;
@@ -75,5 +76,23 @@
   .alert-icon svg {
     stroke: #e74c3c;
   }
+}
+
+/* ===== 暗色主题适配（网站手动切换，Valaxy 通常给 html 加 .dark 类） ===== */
+.dark .alert-box {
+  background-color: rgba(231, 76, 60, 0.12);
+  border-color: #e74c3c;
+}
+.dark .alert-box:hover {
+  background-color: rgba(231, 76, 60, 0.2);
+}
+.dark .alert-content {
+  color: #f0f0f0;
+}
+.dark .alert-icon {
+  color: #e74c3c;
+}
+.dark .alert-icon svg {
+  stroke: #e74c3c;
 }
 </style>
