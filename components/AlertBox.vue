@@ -19,69 +19,59 @@
 <style scoped>
 /* ===== 警告框容器 ===== */
 .alert-box {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 14px !important;
-  padding: 16px 20px !important;
-  margin: 20px 0 !important;
-  border: 2px solid #e74c3c !important;
-  border-radius: 8px !important;
-  background-color: rgba(231, 76, 60, 0.06) !important;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  background-color: rgba(231, 76, 60, 0.06);
   transition: background-color 0.2s ease;
 }
 
 .alert-box:hover {
-  background-color: rgba(231, 76, 60, 0.12) !important;
+  background-color: rgba(231, 76, 60, 0.12);
 }
 
 /* ===== 左侧警告图标 ===== */
 .alert-icon {
-  flex-shrink: 0 !important;
-  width: 24px !important;
-  height: 24px !important;
-  margin-top: 2px !important;
-  color: #e74c3c !important;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
 }
 
 .alert-icon svg {
-  width: 100% !important;
-  height: 100% !important;
-  stroke: #e74c3c !important;
+  width: 100%;
+  height: 100%;
+  stroke: #e74c3c;
 }
 
-/* ===== 右侧文字内容：最高优先级，强制深色 ===== */
-.alert-content,
-.alert-content * {
+/* ===== 右侧文字（默认：浅色主题 → 深色文字） ===== */
+.alert-content {
   flex: 1;
   min-width: 0;
-  color: #000000 !important;   /* 强制纯黑，最高对比度 */
+  color: #1a1a1a;
   font-size: 1rem;
   line-height: 1.7;
 }
 
-/* ===== 暗色主题适配：系统偏好 ===== */
-@media (prefers-color-scheme: dark) {
-  .alert-box {
-    background-color: rgba(231, 76, 60, 0.15) !important;
-  }
-  .alert-box:hover {
-    background-color: rgba(231, 76, 60, 0.25) !important;
-  }
-  .alert-content,
-  .alert-content * {
-    color: #ffffff !important;   /* 暗色下强制纯白 */
-  }
+.alert-content :deep(*) {
+  color: inherit;
 }
 
-/* ===== 暗色主题适配：网站手动切换（Valaxy 常用 .dark 类） ===== */
-:global(.dark) .alert-box {
-  background-color: rgba(231, 76, 60, 0.15) !important;
+/* ===== 暗色主题：html.dark 下强制亮色文字 ===== */
+:global(html.dark) .alert-box {
+  background-color: rgba(231, 76, 60, 0.15);
 }
-:global(.dark) .alert-box:hover {
-  background-color: rgba(231, 76, 60, 0.25) !important;
+
+:global(html.dark) .alert-box:hover {
+  background-color: rgba(231, 76, 60, 0.25);
 }
-:global(.dark) .alert-content,
-:global(.dark) .alert-content * {
-  color: #ffffff !important;
+
+:global(html.dark) .alert-content,
+:global(html.dark) .alert-content :deep(*) {
+  color: #f0f0f0;
 }
 </style>
