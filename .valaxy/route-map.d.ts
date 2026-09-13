@@ -276,13 +276,6 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
-    '/posts/食堂宵夜': RouteRecordInfo<
-      '/posts/食堂宵夜',
-      '/posts/%E9%A3%9F%E5%A0%82%E5%AE%B5%E5%A4%9C',
-      Record<never, never>,
-      Record<never, never>,
-      | never
-    >,
     '/posts/ACE韩舞社': RouteRecordInfo<
       '/posts/ACE韩舞社',
       '/posts/ACE%E9%9F%A9%E8%88%9E%E7%A4%BE',
@@ -293,6 +286,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/Band乐队': RouteRecordInfo<
       '/posts/Band乐队',
       '/posts/Band%E4%B9%90%E9%98%9F',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/Late-night-snack': RouteRecordInfo<
+      '/posts/Late-night-snack',
+      '/posts/Late-night-snack',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -604,14 +604,6 @@ declare module 'vue-router/auto-routes' {
       pathParamNames:
         | never
     }
-    'pages/posts/食堂宵夜.md': {
-      routes:
-        | '/posts/食堂宵夜'
-      views:
-        | never
-      pathParamNames:
-        | never
-    }
     'pages/posts/ACE韩舞社.md': {
       routes:
         | '/posts/ACE韩舞社'
@@ -623,6 +615,14 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Band乐队.md': {
       routes:
         | '/posts/Band乐队'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/Late-night-snack.md': {
+      routes:
+        | '/posts/Late-night-snack'
       views:
         | never
       pathParamNames:

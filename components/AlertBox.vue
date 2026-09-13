@@ -13,8 +13,10 @@
   </div>
 </template>
 
+<script setup>
+</script>
+
 <style scoped>
-/* ===== 浅色主题（默认）：深色文字 ===== */
 .alert-box {
   display: flex;
   align-items: flex-start;
@@ -44,20 +46,12 @@
   min-width: 0;
   font-size: 1rem;
   line-height: 1.7;
-  color: #1a1a1a;
+  /* 关键：读取 Valaxy 的文字颜色变量，自动跟随主题 */
+  color: var(--va-c-text, #1a1a1a);
 }
 
 .alert-content :deep(*) {
-  color: #1a1a1a;
-}
-
-/* ===== 暗色主题：html.dark 下用白色文字 ===== */
-html.dark .alert-box {
-  background-color: rgba(231, 76, 60, 0.15);
-}
-
-html.dark .alert-content,
-html.dark .alert-content :deep(*) {
-  color: #f0f0f0;
+  /* 让插槽内所有子元素继承父级颜色 */
+  color: inherit;
 }
 </style>
