@@ -19,80 +19,69 @@
 <style scoped>
 /* ===== 警告框容器 ===== */
 .alert-box {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 16px 20px;
-  margin: 20px 0;
-  border: 2px solid #e74c3c;
-  border-radius: 8px;
-  background-color: rgba(231, 76, 60, 0.06);
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 14px !important;
+  padding: 16px 20px !important;
+  margin: 20px 0 !important;
+  border: 2px solid #e74c3c !important;
+  border-radius: 8px !important;
+  background-color: rgba(231, 76, 60, 0.06) !important;
   transition: background-color 0.2s ease;
 }
 
 .alert-box:hover {
-  background-color: rgba(231, 76, 60, 0.12);
+  background-color: rgba(231, 76, 60, 0.12) !important;
 }
 
 /* ===== 左侧警告图标 ===== */
 .alert-icon {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  margin-top: 2px;
-  color: #e74c3c;
+  flex-shrink: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin-top: 2px !important;
+  color: #e74c3c !important;
 }
 
 .alert-icon svg {
-  width: 100%;
-  height: 100%;
-  stroke: #e74c3c;
+  width: 100% !important;
+  height: 100% !important;
+  stroke: #e74c3c !important;
 }
 
-/* ===== 右侧文字内容：浅色主题下用深色文字 ===== */
-.alert-content {
+/* ===== 右侧文字内容：最高优先级，强制深色 ===== */
+.alert-content,
+.alert-content * {
   flex: 1;
   min-width: 0;
-  color: #1a1a1a;
+  color: #000000 !important;   /* 强制纯黑，最高对比度 */
   font-size: 1rem;
   line-height: 1.7;
 }
 
-/* ===== 暗色主题适配（系统偏好） ===== */
+/* ===== 暗色主题适配：系统偏好 ===== */
 @media (prefers-color-scheme: dark) {
   .alert-box {
-    background-color: rgba(231, 76, 60, 0.12);
-    border-color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.15) !important;
   }
   .alert-box:hover {
-    background-color: rgba(231, 76, 60, 0.2);
+    background-color: rgba(231, 76, 60, 0.25) !important;
   }
-  .alert-content {
-    color: #f0f0f0;
-  }
-  .alert-icon {
-    color: #e74c3c;
-  }
-  .alert-icon svg {
-    stroke: #e74c3c;
+  .alert-content,
+  .alert-content * {
+    color: #ffffff !important;   /* 暗色下强制纯白 */
   }
 }
 
-/* ===== 暗色主题适配（网站手动切换，Valaxy 通常给 html 加 .dark 类） ===== */
-.dark .alert-box {
-  background-color: rgba(231, 76, 60, 0.12);
-  border-color: #e74c3c;
+/* ===== 暗色主题适配：网站手动切换（Valaxy 常用 .dark 类） ===== */
+:global(.dark) .alert-box {
+  background-color: rgba(231, 76, 60, 0.15) !important;
 }
-.dark .alert-box:hover {
-  background-color: rgba(231, 76, 60, 0.2);
+:global(.dark) .alert-box:hover {
+  background-color: rgba(231, 76, 60, 0.25) !important;
 }
-.dark .alert-content {
-  color: #f0f0f0;
-}
-.dark .alert-icon {
-  color: #e74c3c;
-}
-.dark .alert-icon svg {
-  stroke: #e74c3c;
+:global(.dark) .alert-content,
+:global(.dark) .alert-content * {
+  color: #ffffff !important;
 }
 </style>
