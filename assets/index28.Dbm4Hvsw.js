@@ -1,0 +1,1 @@
+import{W as e}from"./theme.DX-bgnrp.js";var t=e({defaults:{"@type":`PostalAddress`}});export{t as addressResolver};

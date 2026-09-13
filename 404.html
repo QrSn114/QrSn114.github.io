@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // 这行代码的作用是：记录下用户想访问的原始地址
+    sessionStorage.redirect = location.href;
+  </script>
+  <!-- 这行代码的作用是：立即跳转到网站的首页 -->
+  <meta http-equiv="refresh" content="0;URL='/'">
+  <title>页面跳转中...</title>
+</head>
+<body>
+  <!-- 如果浏览器没有自动跳转，用户点击这个链接也能回到首页 -->
+  <p>如果页面没有自动跳转，请<a href="/">点击这里</a>。</p>
+</body>
+</html>
